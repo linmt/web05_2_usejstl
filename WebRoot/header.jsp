@@ -1,13 +1,8 @@
-<%@page import="java.util.*,java.text.*" %>
+<%@taglib uri="lmt.com" prefix="c1" %>
 <div id="header">
 	<div id="rightheader">
 		<p>
-			<%
-				Date date=new Date();
-				SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-			 %>
-			 <%=sdf.format(date)%>
-			<br />
+			<c1:date pattern="yyyy-MM-dd"/><br />
 		</p>
 	</div>
 	<div id="topheader">

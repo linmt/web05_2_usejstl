@@ -19,9 +19,12 @@
 								<td valign="middle" align="right">用户名:</td>
 								<td valign="middle" align="left">
 									<input type="text" class="inputgri" name="username" />
+									<%--注释掉
 									<%String msg=(String)request.getAttribute("regis_err");%>
 		 							<span style="color: red;">
 		 								<%=msg==null?"":msg%></span>
+		 							--%>
+									<span style="color: red;">${regis_err}</span>
 								</td>
 							</tr>
 							<tr>

@@ -19,9 +19,15 @@
 								<td valign="middle" align="right">用户名:</td>
 								<td valign="middle" align="left">
 									<input type="text" class="inputgri" name="username" />
+									<%--
 									<%String msg=(String)request.getAttribute("login_err");%>
+									--%>
 		 							<span style="color: red;">
-		 								<%=msg==null?"":msg%></span>
+										<%--
+		 								<%=msg==null?"":msg%>
+		 								--%>
+										${login_err}
+		 							</span>
 								</td>
 							</tr>
 							<tr>
