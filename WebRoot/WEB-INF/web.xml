@@ -51,4 +51,13 @@
   	<param-name>size</param-name>
   	<param-value>20</param-value>
   </context-param>
+
+   <servlet>
+       <servlet-name>findStudent</servlet-name>
+       <servlet-class>web.FindStudentServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+       <servlet-name>findStudent</servlet-name>
+       <url-pattern>/findStudent</url-pattern>
+   </servlet-mapping>
 </web-app>
